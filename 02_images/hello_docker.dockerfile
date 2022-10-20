@@ -1,3 +1,0 @@
-FROM debian
-
-RUN /BIN/ECHO "HELLO DOCKER"

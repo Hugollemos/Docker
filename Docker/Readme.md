@@ -1,2 +1,0 @@
-# Docker
-Conhecimentos de Docker
