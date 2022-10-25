@@ -1,4 +1,12 @@
 # volumes 
+
+## Comandos básicos
+
+```bash
+  # Apreenta todos os volumes 
+  Docker volume ls
+```
+
 <h1>Os volumes são os lugares a onde são guardados os dados.
 Os volumes de dados quando criados no container são apontados para uma pequena pasta no docker host a onde ficam retidos sem perde-los.</h1> 
 
