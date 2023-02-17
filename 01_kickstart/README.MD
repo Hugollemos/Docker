@@ -145,3 +145,11 @@ Parâmetro | Explicação
 -p | Mapeamento de porta
 -m | Limitar o uso de memória RAM
 -c | Balancear o uso de CPU
+
+
+Há duas formas de criar imagens customizadas: com commit e com Dockerfile.
+
+### Criando imagens com commit
+
+documentar os exemplos de criação
+https://stack.desenvolvedor.expert/appendix/docker/criandoimagem.html
