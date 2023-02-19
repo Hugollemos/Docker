@@ -112,11 +112,7 @@ docker rm CONTAINER_NAME
 docker stop $(docker ps -q)
 ```
 
-## Conectando a um site de dentro do container 
-```bash
-# Flag: "-p" fará com que o Docker atribua uma porta aleatória do mundo externo,(minha máquina), para poder se comunicar com o que está dentro do container:
-docker run -d -P dockersamples/static-site
-```
+## Flag: "-p" fará com que o Docker atribua uma porta aleatória do mundo externo,(minha máquina), para poder se comunicar com a porta que está dentro 
 
 ```bash
 # Vendo as portas do container
@@ -126,6 +122,7 @@ docker port [CONTAINER ID]
 ## Definindo uma porta específica
 ```bash
 docker run -d -p 12345:80 dockersamples/static-site
+# Isso mapeia a porta 80 do contêiner para a porta 12345 do host. A porta 80 do contêiner será exposta externamente como a porta 80 do host.
 ```
 
 ## Nomeando containers
@@ -145,6 +142,10 @@ Parâmetro | Explicação
 -p | Mapeamento de porta
 -m | Limitar o uso de memória RAM
 -c | Balancear o uso de CPU
+-a | Lista todos os containers, inclusive os desligados
+-i | Lista os últimos containers, inclusive os desligados
+-n | Lista os últimos N containers, inclusive os desligados
+-q | Lista apenas os ids dos containers, ótimo para utilização em scripts
 
 
 Há duas formas de criar imagens customizadas: com commit e com Dockerfile.
