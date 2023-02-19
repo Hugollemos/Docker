@@ -16,6 +16,8 @@ docker network create --drive NETWORK_TYPE NETWORK_NAME
 
 docker network create --driver bridge minharede
 ```
+O comando _docker network create_ cria uma rede no Docker.
+O comando _--driver_ é usdo para criar uma rede. Obs:existem vários drivers de rede.
 
 ```bash
 # Exibe informações da network especificada
