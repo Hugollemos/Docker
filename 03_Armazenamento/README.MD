@@ -23,7 +23,7 @@ EX:
 ```bash
 --mount'type=volume,source=mysql-db,target=/var/lib/mysql,readonly'
 ```
-- mysql-db - Volume nomeado noDocker Host. Podemos chamar através do source ou src
+- mysql-db - Volume nomeado no Docker Host. Podemos chamar através do source ou src
 - /var/lib.mysql - diretório dentro do container. Podemos chamar através de destination, dst ou target
 - readonly - este campo é opcional, é possível informar se o volume é read-only ou read-write. O padrão é read-write.
 
@@ -46,7 +46,7 @@ EX:
 - -v $(pwd)/mysql - Caminho do diretório local
 - var/lib/mysql - Diretório dentro do container
 - ro - Este campo é opcional, é possível informar se o volume é read only (ro) ou read write (rw). O padrão é RW.
-## sintaxe da flag --mount(Comporta por cahve e valor):
+## sintaxe da flag --mount(Comporta por chave e valor):
 ```bash
 --mount'type=volume,source=$(pwd)/mysql,target=/var/lib/mysql,readonly'
 ```
@@ -54,4 +54,4 @@ EX:
 - /var/lib/mysql - diretório dentro do container. Podemos chamar através de destination, dst ou target.
 - readonly - este campo é opcional, é possível informar se o volume é read-only ou read-write. O padrão é read-write.
 
-docker run -d --name nginx -p 8080:80 --mount type=bind,source="$(pwd)"/html,target=/usr/share/nginx/html
+docker run -d --name nginx -p 8080:80 --mount type=bind,source="$(pwd)"/html,target=/usr/share/nginx/html 
