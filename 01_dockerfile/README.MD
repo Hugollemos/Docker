@@ -13,7 +13,7 @@ ENTRYPOINT -- Permite que você configure um container para rodar um executável
 
 ENV -- Informa variáveis de ambiente ao container.
 
-EXPOSE -- Informa qual porta o container estará ouvindo.
+EXPOSE -- Somente informa qual porta o container estará ouvindo.
 
 FROM -- Indica qual imagem será utilizada como base. Ela precisa ser a primeira linha do dockerfile.
 
@@ -23,7 +23,7 @@ RUN -- Executa qualquer comando em uma nova camada no topo da imagem e "commita"
 
 USER -- Determina qual usuário será utilizado na imagem. Por default é o root.
 
-VOLUME -- Permite a criação de um ponto de montagem no container.
+VOLUME -- Essa instrução cria uma pasta em nosso container que será compartilhada entre o container e o host. Todo arquivo criado dentro dessa pasta será acessível a partir da máquina host no caminho /var/lib/docker/volumes.
 
 WORKDIR -- Responsável por mudar do diretório "/" (raiz) para o especificado nele.
 ```bash
