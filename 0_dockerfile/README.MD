@@ -1,10 +1,13 @@
-ADD -- Copia novos arquivos, diretórios, arquivos TAR ou arquivos remotos e os adiciona ao filesystem do container.
+
+ADD -- O papel do ADD é fazer a cópia de um arquivo, diretório ou até mesmo fazer o download de uma URL de nossa máquina host e colocar dentro da imagem.
+
+COPY -- A instrução COPY, permite apenas a passagem de arquivos ou diretórios, diferente do ADD, que permite downloads. 
+
+OBS: As instruções ADD e COPY tem propósitos semelhantes, copiar do host para a imagem. Porém existem diferenças no uso.
 
 CMD -- Executa um comando. Diferentemente do RUN, que executa o comando no momento em que está "buildando" a imagem, o CMD irá fazê-lo somente quando o container é iniciado.
 
 LABEL -- Adiciona metadados à imagem, como versão, descrição e fabricante.
-
-COPY -- Copia novos arquivos e diretórios e os adiciona ao filesystem do container.
 
 ENTRYPOINT -- Permite que você configure um container para rodar um executável. Quando esse executável for finalizado, o container também será.
 
