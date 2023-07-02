@@ -130,6 +130,29 @@ docker run -d -p 12345:80 dockersamples/static-site
 EX:
 docker run -d -P --name meu-site dockersamples/static-site
 ```
+
+## Visualizar os logs 
+```bash
+docker container logs -f [CONTAINER ID]
+-f ou --follow(indica que você deseja acompanhar os logs em tempo real, à medida que são atualizados).
+```
+
+## deixando container vivo depois de usar -d para deixa-lo em segundo plano.
+```
+docker run -d <imagem> tail -f /dev/null
+```
+## para exibir estatísticas em tempo real do consumo de recursos de um container Docker específico.
+- CONTAINER: O ID ou nome do container.
+- CPU %: A porcentagem de uso de CPU pelo container.
+- MEM USAGE / LIMIT: A quantidade de memória em uso pelo container e o limite de memória definido.
+- MEM %: A porcentagem de uso de memória pelo container.
+- NET I/O: O uso de E/S de rede pelo container.
+- BLOCK I/O: O uso de E/S de disco pelo container.
+- PIDs: O número de processos em execução dentro do container.
+```
+docker container stats [CONTAINER ID]
+```
+
 ---
 Parâmetro | Explicação
 ---------|----------|

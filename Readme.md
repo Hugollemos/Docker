@@ -1,7 +1,6 @@
 # Docker
 
 ## motivos para utilizar o docker
-
 1.Ambientes semelhantes <br>
 2.Aplicação como pacote completo <br>
 3.Padronização e replicação <br>
@@ -17,3 +16,8 @@ chmod +x /usr/local/bin/docker-compose
 ### instalar o docker-machine 
 $ curl -L https://github.com/docker/machine/releases/download/v0.7.0/docker-machine-`uname -s`-`uname -m` > /usr/local/bin/docker-machine && \
 chmod +x /usr/local/bin/docker-machine
+
+### pc fraco ? use: https://labs.play-with-docker.com
+
+### olhar a situação dos containers sem portainer
+link: https://hub.docker.com/r/dockersamples/visualizer
