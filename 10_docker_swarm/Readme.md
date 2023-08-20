@@ -21,11 +21,6 @@ Essa saída é usada para adicionar outras máquinas ao cluster
 docker swarm join --token SWMTKN-1-100qtga34hfnf14xdbbhtv8ut6ugcvuhsx427jtzwaw1td2otj-18wccykydxte59gch2pix 172.31.58.90:2377
 ```
 
-## Comando para criar a máquina
-```
-docker-machine create -d virtualbox [nome]
-```
-
 ## Comando para pegar o token do manager
 ```
 docker swarm join-token manager
@@ -43,4 +38,13 @@ docker node promote <nome do nó>
 docker node demote [nome do nó]
 ```
 
-continua...
+### Removendo o node do cluster
+docker swarm leave
+### removendo o node
+docker node rm
+
+### removendo um node manager do cluster
+docker swarm leave --force
+
+
+# SERVICES

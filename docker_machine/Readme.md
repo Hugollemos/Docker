@@ -121,3 +121,8 @@ docker-machine start VM1
 ``````
 docker-machine rm linuxtips
 ``````
+
+## Comando para criar a máquina
+```
+docker-machine create -d virtualbox [nome]
+```
