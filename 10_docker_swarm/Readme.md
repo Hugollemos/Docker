@@ -37,14 +37,18 @@ docker node promote <nome do nó>
 ```
 docker node demote [nome do nó]
 ```
-
 ### Removendo o node do cluster
+``````
 docker swarm leave
+``````
 ### removendo o node
+``````
 docker node rm
-
+``````
 ### removendo um node manager do cluster
+``````
 docker swarm leave --force
-
+``````
 
 # SERVICES
+...
