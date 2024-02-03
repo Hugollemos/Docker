@@ -5,4 +5,5 @@ echo "deb [signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://dow
 sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io
 docker --version
-sudo chmod 777 /var/run/docker.sock ou sudo usermod -aG docker $USER
+sudo chmod 666 /var/run/docker.sock
+
